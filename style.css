@@ -1,0 +1,286 @@
+
+
+
+body{
+    background-color: white;
+    width:100%;
+    padding: 0;
+    margin: 0px !important;
+    
+}
+
+.white-color{
+    color:white;
+}
+.white-bg{
+  background-color: white;
+}
+.pink-color{
+color:#FE019A;
+}
+.pink-bg{
+    background-color: #FE019A;
+}
+.dark-grey-color{
+    color:#090A0B;
+}
+.dark-grey-bg{
+    background-color:#090A0B;
+}
+.gold-bg{
+    background-color: #DD9A31;
+}
+
+
+/*Hero-Section*/
+#hero{
+background-image: url('img/hero-bg.png'); 
+background-position: center;
+background-repeat:repeat;
+position: relative;
+padding: 30px 0;
+width: 100%;
+}
+.flexbox{
+    width:90%;
+    margin:auto;
+    
+}
+nav{
+  display: flex;
+  justify-content:space-between;
+  margin-left:10%;
+}
+ul{
+  display: flex;
+  padding:0;
+}
+li{
+  margin:0 30px;
+  list-style:none ;
+  text-align: center;
+}
+
+a{
+  font-family: 'Abril Fatface', serif;
+  text-decoration: none;
+  font-size:16px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+a:hover{
+  opacity:1;
+  color: #F649A3;
+  text-decoration: none;
+ 
+}
+#main-logo{
+    width:100%;
+    text-align: center;
+    margin-top: 60px;
+    z-index: 5;
+    position: relative;
+}
+#main-logo>img{
+    width:70%;
+}
+
+  /*Bottom-Section*/
+  h1{
+    font-family: 'Allison', cursive;
+    font-size: 60px;
+    font-weight: 100;
+   
+}
+  .bottom{
+    width:100%;
+    border-top:#DD9A31 solid 12px ;
+    background-image: url('img/bottom-bg.png');
+    background-position: center;
+    background-repeat:repeat;
+    position: relative;
+    margin-top:-90px;
+    padding:0 0 60px 0;
+   
+    
+  }
+  #main-bottom-textbox{
+    width:100%;
+    margin:60px auto 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+/*Project-Site*/
+
+.nav-logo{
+  width:80%;
+  padding-top: 3px;
+  
+
+}
+
+.project-img{
+  width:100%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index:15;
+
+
+}
+.seethewebpage{
+  width:15%;
+  margin: -130px auto;
+  position: relative;
+  z-index:20;
+}
+.seethewebpage-arrow{
+  width:80%;
+
+}
+.seethewebpage-arrow:hover{
+  width:80.5%;
+  transition: opacity .15s ease;
+}
+
+.bottom-ul{
+  width:80%;
+  margin-top:210px;
+  margin:360px auto 0;
+  justify-content: space-between;
+
+}
+.bottom-ul>li>a, a.follow{
+  opacity: 1;
+  font-family: 'Abril Fatface', serif;
+  font-size:20px;
+  font-weight:100;
+  opacity: 1;
+ 
+}
+.bottom-ul>li>a:hover{
+  opacity:0.8;
+}
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top:10px;
+}
+/*Carousel*/
+.carousel.slide{
+  margin-top:0;
+}
+.carousel-inner{
+  overflow: visible;
+}
+
+button.carousel-control-next, button.carousel-control-prev{
+  border: 0;
+  width:30px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  z-index:20;
+  margin-top:120px;
+  background-color: #D0C193;
+ 
+}
+
+button.carousel-control-next{
+margin-right:20%;
+}
+button.carousel-control-prev{
+margin-left:20%;
+}
+  @media only screen and (max-width: 1150px){
+    .flexbox{
+      width:90%;
+    }
+    .carousel.slide {
+      margin-top: 20px;
+    }
+    h1{
+      font-size: 50px;
+    }
+    .seethewebpage{
+      margin-top:-90px;
+
+    }
+    .bottom-ul{
+      margin-top: 180px;
+    }
+    button.carousel-control-next, button.carousel-control-prev{
+      margin-top:90px;
+      
+    }
+  }
+  @media only screen and (max-width: 950px){
+    h1{
+      font-size: 40px;
+    }
+  
+    #main-logo>img{
+      width:100%;
+  }
+    
+  }
+  @media only screen and (max-width: 760px){
+    #hero{
+      padding-top: 10px;
+    }
+    nav{
+      justify-content: center;
+    }
+    li{
+      margin:0 15px 0 15px;
+     
+
+    }
+    button.carousel-control-next, button.carousel-control-prev{
+      margin-top:60px;
+      width:20px;
+      height:20px;
+      border-radius: 3px;
+    }
+    a,.bottom-ul>li>a, a.follow{
+      font-size: 14px;
+    
+    }
+    .seethewebpage{
+      margin-top:-60px;
+
+    }
+  }
+  @media only screen and (max-width: 590px){
+    li{
+      margin:0 8px;
+    }
+   .bottom{
+    margin-top:-75px;
+   }
+   .seethewebpage{
+    margin-top:-60px;
+
+  }
+  .facebook-icon, .insta-icon{
+    width:80%;
+  }
+  button.carousel-control-next, button.carousel-control-prev{
+    margin-top:30px;
+ 
+  }
+  }
+  @media only screen and (max-width: 480px){
+    #main-bottom-textbox{
+     flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .seethewebpage{
+      margin-top:-40px;
+
+    }
+    .bottom-ul{
+      margin-top: 120px;
+    }
+   }
